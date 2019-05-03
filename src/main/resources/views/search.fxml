@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+          minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" vgap="10" xmlns="http://javafx.com/javafx/8"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chernyak.controllers.SearchController">
+    <columnConstraints>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="800.0">
+            <children>
+                <TableView fx:id="tableViewApartmentsList" layoutX="20.0" layoutY="119.0" prefHeight="255.0"
+                           prefWidth="541.0" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="20.0"
+                           AnchorPane.rightAnchor="20.0">
+                    <columns>
+                        <TableColumn fx:id="tableColumnNumber" prefWidth="75.0" text="Номер"/>
+                        <TableColumn fx:id="tableColumnSquare" prefWidth="75.0" text="Площа"/>
+                        <TableColumn fx:id="tableColumnFloor" prefWidth="75.0" text="Поверх"/>
+                        <TableColumn fx:id="tableColumnRoomNumber" prefWidth="92.0" text="К-сть кімнат"/>
+                        <TableColumn fx:id="tableColumnStreet" prefWidth="75.0" text="Вулиця"/>
+                        <TableColumn fx:id="tableColumnBuildType" prefWidth="75.0" text="Тип будівлі"/>
+                        <TableColumn fx:id="tableColumnLifeTime" prefWidth="75.0" text="Термін"/>
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                    </columnResizePolicy>
+                </TableView>
+                <Button fx:id="buttonSearch" layoutX="242.0" layoutY="83.0" mnemonicParsing="false"
+                        onAction="#actionSearch" prefHeight="20.0" prefWidth="100.0" text="Пошук"/>
+                <CheckBox fx:id="checkBoxRoomNumber" layoutX="156.0" layoutY="40.0" mnemonicParsing="false"
+                          onAction="#actionSelectRoomNumber"/>
+                <CheckBox fx:id="checkBoxFloor" layoutX="359.0" layoutY="40.0" mnemonicParsing="false"
+                          onAction="#actionSelectFloor"/>
+                <CheckBox fx:id="checkBoxSquare" layoutX="526.0" layoutY="40.0" mnemonicParsing="false"
+                          onAction="#actionSelectSquare"/>
+                <TextField fx:id="textFieldRoomNumber" layoutX="96.0" layoutY="36.0" prefHeight="25.0"
+                           prefWidth="50.0"/>
+                <TextField fx:id="textFieldFloorMin" layoutX="263.0" layoutY="36.0" prefHeight="25.0" prefWidth="29.0"/>
+                <TextField fx:id="textFieldSquare" layoutX="465.0" layoutY="36.0" prefHeight="25.0" prefWidth="50.0"/>
+                <Label layoutX="14.0" layoutY="40.0" text="К-сть кімнат"/>
+                <Label layoutX="194.0" layoutY="40.0" text="Поверх: від"/>
+                <Label layoutX="413.0" layoutY="40.0" text="Площа"/>
+                <TextField fx:id="textFieldFloorMax" layoutX="320.0" layoutY="36.0" prefHeight="25.0" prefWidth="29.0"/>
+                <Label layoutX="300.0" layoutY="40.0" text="до"/>
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>

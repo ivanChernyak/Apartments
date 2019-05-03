@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.chernyak.controllers.CreateController">
+    <columnConstraints>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="289.0" prefWidth="266.0">
+            <children>
+                <Label layoutX="30.0" layoutY="27.0" minHeight="20.0" text="Номер" AnchorPane.leftAnchor="30.0"
+                       AnchorPane.topAnchor="27.0"/>
+                <Label layoutX="30.0" layoutY="57.0" minHeight="20.0" text="Площа" AnchorPane.leftAnchor="30.0"
+                       AnchorPane.topAnchor="57.0"/>
+                <Label layoutX="30.0" layoutY="87.0" minHeight="20.0" text="Поверх" AnchorPane.leftAnchor="30.0"
+                       AnchorPane.topAnchor="87.0"/>
+                <Label layoutX="30.0" layoutY="117.0" minHeight="20.0" text="К-сть кімнат" AnchorPane.leftAnchor="30.0"
+                       AnchorPane.topAnchor="117.0"/>
+                <Label layoutX="30.0" layoutY="147.0" minHeight="20.0" text="Вулиця" AnchorPane.leftAnchor="30.0"
+                       AnchorPane.topAnchor="147.0"/>
+                <Label layoutX="30.0" layoutY="177.0" minHeight="20.0" text="Тип будівлі" AnchorPane.leftAnchor="30.0"
+                       AnchorPane.topAnchor="177.0"/>
+                <Label layoutX="30.0" layoutY="207.0" minHeight="20.0" text="Термін" AnchorPane.leftAnchor="30.0"
+                       AnchorPane.topAnchor="207.0"/>
+                <Button layoutX="30.0" layoutY="247.0" mnemonicParsing="false" onAction="#actionOk" prefHeight="25.0"
+                        prefWidth="96.0" text="Ок" AnchorPane.leftAnchor="30.0"/>
+                <Button layoutX="140.0" layoutY="247.0" mnemonicParsing="false" onAction="#actionClose"
+                        prefHeight="25.0" prefWidth="96.0" text="Скасувати" AnchorPane.rightAnchor="30.0"/>
+                <TextField fx:id="textFieldNumber" layoutX="120.0" layoutY="27.0" prefHeight="20.0" prefWidth="50.0"
+                           AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="27.0"/>
+                <TextField fx:id="textFieldSquare" layoutX="120.0" layoutY="57.0" prefHeight="20.0" prefWidth="50.0"
+                           AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="57.0"/>
+                <TextField fx:id="textFieldFloor" layoutX="120.0" layoutY="87.0" prefHeight="20.0" prefWidth="50.0"
+                           AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="87.0"/>
+                <TextField fx:id="textFieldRoomNumber" layoutX="120.0" layoutY="117.0" prefHeight="20.0"
+                           prefWidth="50.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="117.0"/>
+                <TextField fx:id="textFieldStreet" layoutX="120.0" layoutY="147.0" prefHeight="25.0" prefWidth="109.0"
+                           AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="147.0"/>
+                <TextField fx:id="textFieldBuildType" layoutX="120.0" layoutY="177.0" prefHeight="25.0"
+                           prefWidth="109.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="177.0"/>
+                <TextField fx:id="textFieldLifeTime" layoutX="120.0" layoutY="207.0" prefHeight="20.0" prefWidth="50.0"
+                           AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="207.0"/>
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>

@@ -1,0 +1,8 @@
+2019-04-24 20:35:09 TRACE ApartmentIO:87 - Failed to open data-file for reading, FileNotFoundException: F:\Ivan\01_University\03_course\02_semester\03_JAVA\Apartments\ApartmentsData\data.txt (Не удается найти указанный файл)
+2019-04-24 20:35:09 TRACE Main:30 - Failed to load Main-view file, IOException: 
+/F:/Ivan/01_University/03_course/02_semester/03_JAVA/Apartments/target/classes/views/mainPage.fxml
+
+2019-04-24 20:37:09 INFO  CreateController:23 - Apartment create Apartment{id=2, number=1, square=1.0, floor=1, roomNumber=1, street='1', buildType='1', lifeTime=1}
+2019-04-24 20:38:23 INFO  UpdateController:31 - Apartment update Apartment{id=2, number=2, square=1.0, floor=1, roomNumber=1, street='1', buildType='1', lifeTime=1}
+2019-04-24 20:40:22 INFO  MainController:65 - Apartment remove Apartment{id=2, number=2, square=1.0, floor=1, roomNumber=1, street='1', buildType='1', lifeTime=1}
+2019-04-25 10:15:31 INFO  CreateController:23 - Apartment create Apartment{id=2, number=1, square=1.0, floor=1, roomNumber=1, street='1', buildType='1', lifeTime=1}
